@@ -78,7 +78,7 @@
 
 (defun notmuch/init-gnus-alias ()
   (use-package gnus-alias
-    :init (add-hook 'message-setup-hook 'gnus-alias-determine-identity)
+    ;; :init ;; (add-hook 'message-setup-hook 'gnus-alias-determine-identity)
     :config (progn
               (if (not (boundp 'notmuch/gnus-alias-identities))
                   (setq notmuch/gnus-alias-identities notmuch/gnus-alias-identities-default))
